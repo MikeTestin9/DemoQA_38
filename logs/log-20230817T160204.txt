@@ -1,0 +1,6 @@
+16:02:06 INFO  manager.AppManager - Opening the URL...
+16:02:16 INFO  manager.AppManager - URL opened successfully.
+16:02:16 INFO  StudentFormTest - Hiding Ads
+16:02:17 INFO  StudentFormTest - Selecting forms
+16:02:22 INFO  StudentFormTest - Selecting practice forms
+16:02:22 INFO  manager.HelperStudent - First name is: Sarah

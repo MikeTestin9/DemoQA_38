@@ -1,6 +1,7 @@
 package manager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 public interface HelperBase extends AppManager{
@@ -23,4 +24,14 @@ public interface HelperBase extends AppManager{
             e.printStackTrace();
         }
     }
+    default void hideAds(){
+        JavascriptExecutor js = (JavascriptExecutor) WEB_DRIVER;
+        js.executeScript("document.querySelector('#adplus-anchor').style.display='none'");
+    }
+
+    default void hideFooter(){
+        JavascriptExecutor js = (JavascriptExecutor) WEB_DRIVER;
+        js.executeScript("document.querySelector('footer').style.display='none'");
+    }
+
 }
